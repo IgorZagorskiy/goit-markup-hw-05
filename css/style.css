@@ -602,10 +602,9 @@ letter-spacing: 0.02em;
   display: flex;
     justify-content: center;
     align-items: center;
-    gap: 16px;
     padding: 8px 24px;
     color: rgb(255, 255, 255);
-      font-family: Roboto;
+      font-family: "Roboto", sans-serif;
       font-size: 16px;
       font-weight: 500;
       line-height: 24px;
@@ -615,9 +614,12 @@ letter-spacing: 0.02em;
         background: rgb(77, 90, 229); 
         min-width: 165px;
         height: 40px;
+        border: none;
 }
 
-.footer-fom-icon {}
+.footer-fom-icon {
+  margin-left: 16px;
+}
 
 .footer-form {
  width: 453px;
@@ -648,10 +650,15 @@ justify-content: center;
     width: 264px;
     height: 40px;
     background: none;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    color: #ffffff;
 }
 
 .footer-input::placeholder {
-  color: rgb(255, 255, 255);
+  color: #ffffff;
     font-family: Roboto;
     font-size: 12px;
     font-weight: 400;
