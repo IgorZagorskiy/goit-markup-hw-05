@@ -461,7 +461,7 @@
             </li>
           </ul>
         </div>
-      </div>
+      
       <div class="footer-form-container">
         <form class="footer-form">
 <p class="footer-form-text">Subscribe</p>
@@ -477,6 +477,7 @@
 </div>
 </form>
 </div>
+</div>
     </footer>
     <div class="backdrop">
 <div class="modal">
@@ -490,7 +491,7 @@
     <div class="modal-form-field">
 <label class="modal-form-label" for="user-name">Name</label>
 <div class="modal-form-wrapper">
-  <input class="modal-form-input" type="text" name="userName" id="user-name"/>
+  <input class="modal-form-input" type="text" name="user-name" id="user-name"/>
   <svg class="modal-form-icon" width="18" height="24">
    <use href="./images/icons.svg#icon-user"></use>
   </svg>
@@ -499,7 +500,7 @@
     <div class="modal-form-field">
       <label class="modal-form-label" for="user-tel">Phone</label>
       <div class="modal-form-wrapper">
-        <input class="modal-form-input" type="tel" name="userTel" id="user-tel"/>
+        <input class="modal-form-input" type="tel" name="user-tel" id="user-tel"/>
         <svg class="modal-form-icon" width="18" height="24">
           <use href="./images/icons.svg#icon-tel"></use>
         </svg>
@@ -508,19 +509,19 @@
     <div class="modal-form-field">
       <label class="modal-form-label" for="user-email">Email</label>
       <div class="modal-form-wrapper">
-        <input class="modal-form-input" type="email" name="userEmail" id="user-email"/>
+        <input class="modal-form-input" type="email" name="user-email" id="user-email"/>
         <svg class="modal-form-icon" width="18" height="24">
           <use href="./images/icons.svg#icon-email"></use>
         </svg>
       </div>
     </div>
     <div class="modal-form-field">
-      <label class="modal-form-label" for="comment">Comment</label>
-      <textarea class="modal-form-massage" name="userComment" placeholder="Text input" id="comment"></textarea>
+      <label class="modal-form-label" for="user-comment">Comment</label>
+      <textarea class="modal-form-massage" name="user-comment" placeholder="Text input" id="user-comment"></textarea>
     </div>
     <div class="modal-form-agreement">
-      <input class="visually-hidden" id="user-agreement" type="checkbox" name="userAgreement">
-      <label class="modal-form-agreement-text" for="user-agreement">
+      <input class="visually-hidden" id="user-privacy" type="checkbox" name="user-privacy" value="true">
+      <label class="modal-form-agreement-text" for="user-privacy">
    <span class="modal-form-checkbox">
     <svg class="modal-form-checkbox-icon" width="10" height="8">
      <use href="./images/icons.svg#icon-ok"></use>
@@ -530,7 +531,7 @@
   <a href="" class="modal-form-agreement-link">Privacy Policy</a>
   </label>
     </div>
-    <button class="btn">Send</button>
+    <button class="btn modal-form-btn">Send</button>
   </form>
 </div>
     </div>
