@@ -623,7 +623,6 @@ letter-spacing: 0.02em;
 
 .footer-form {
  width: 453px;
- height: 80px;
  margin-left: 80px;
  display: flex;
 justify-content: center;
@@ -640,6 +639,7 @@ justify-content: center;
     letter-spacing: 0.02em;
     text-align: left;
     margin-bottom: 16px;
+    margin-left: 80px;
 }
 
 .footer-input {
