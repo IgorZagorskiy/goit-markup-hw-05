@@ -254,7 +254,8 @@ color: #404bbf;
   display: block;
 }
 
-.hero-button {
+.hero-button,
+.btn {
   background: #4d5ae5;
   font-size: 16px;
   letter-spacing: 0.04em;
@@ -273,8 +274,8 @@ color: #404bbf;
   transition-property: background-color;
 }
 
-.hero-button:hover,
-.hero-button:focus {
+.btn:hover,
+.btn:focus {
   background-color: #404bbf;
 }
 
@@ -592,6 +593,285 @@ letter-spacing: 0.02em;
   justify-items: center;
   fill: #f4f4fd;
 }
+
+.footer-form-container {
+ 
+}
+
+.footer-form-button {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 8px 24px;
+    color: rgb(255, 255, 255);
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: 0.04em;
+      text-align: center;
+      border-radius: 4px;
+        background: rgb(77, 90, 229); 
+        min-width: 165px;
+        height: 40px;
+}
+
+.footer-fom-icon {}
+
+.footer-form {
+ width: 453px;
+ height: 80px;
+ margin-left: 80px;
+}
+
+.footer-form-text {
+    color: rgb(255, 255, 255);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.footer-input {
+  box-sizing: border-box;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    width: 264px;
+    height: 40px;
+    background: none;
+}
+
+.footer-input::placeholder {
+  color: rgb(255, 255, 255);
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-align: left;
+}
+
+.footer-wrapper {
+display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+/* #endregion */
+
+/* #region modal */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: opacity, visibility;
+}
+
+.backdrop.is-open {
+opacity: 1;
+visibility: visible;
+pointer-events: auto;
+}
+
+.backdrop.is-open .modal {
+transform: translateX(-50%) translateY(-50%);
+}
+
+.modal {
+  position: absolute;
+  border-radius: 4px;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+    background: rgb(252, 252, 252);
+    width: 408px;
+      min-height: 584px;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%)
+      translateY(-70%);
+      padding: 72px 24px 24px;
+      transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: transform;
+}
+
+.modal-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  border-radius: 50%;
+  box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: rgb(231, 233, 252);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: background-color, fill;
+}
+
+.modal-btn:hover {
+    background-color: rgb(64, 75, 191);
+}
+
+.modal-btn:hover > .modal-btn-icon {
+  fill: rgb(255, 255, 255);;
+}
+
+.modal-text {
+  margin-bottom: 16px;
+    color: rgb(46, 47, 66);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing:0.02em;
+    text-align: center;
+}
+
+.modal-form {}
+
+.modal-form-field {
+  margin-bottom: 8px;
+}
+
+.modal-form-label {
+  display: block;
+  margin-bottom: 4px;
+    color: rgb(142, 143, 153);
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.04em;
+    text-align: left;
+}
+
+.modal-form-wrapper {
+  position: relative;
+}
+
+.modal-form-input {
+  width: 100%;
+  box-sizing: border-box;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    padding: 14px 38px;
+    height: 40px;
+    outline: transparent;
+    transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: fill, border;
+}
+
+.modal-form-input:focus,
+.modal-form-massage:focus {
+    border: 1px solid rgb(77, 90, 229);
+    border-radius: 4px;
+}
+
+.modal-form-input:focus + .modal-form-icon {
+  fill: rgb(77, 90, 229);
+}
+
+.modal-form-massage {
+  width: 100%;
+  height: 120px;
+    box-sizing: border-box;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+      outline: transparent;
+      transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: border-color;
+      resize: none;
+      padding: 8px 16px;
+
+        font-family: Roboto;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.04em;
+        text-align: left;
+}
+
+.modal-form-massage::placeholder {
+  color: rgba(46, 47, 66, 0.4);
+}
+
+.modal-form-icon {
+  position: absolute;
+  top: 50%;
+  left: 19px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.modal-form-agreement {
+  margin-bottom: 24px;
+}
+
+.modal-form-agreement-text {
+  font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    user-select: none;
+}
+
+.modal-form-agreement-link {
+  line-height: 1.33333;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #4d5ae5;
+}
+
+input[type='checkbox']:checked + 
+.modal-form-agreement-text
+.modal-form-checkbox  {
+border-radius: 2px;
+  border: 1px solid #404bbf;
+  background-color: #404bbf;
+}
+
+input[type='checkbox']:checked+
+.modal-form-agreement-text 
+.modal-form-checkbox
+.modal-form-checkbox-icon {
+  opacity: 1;
+}
+
+.modal-form-checkbox {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.modal-form-checkbox-icon {
+  opacity: 0;
+  transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: opacity;
+}
+
 /* #endregion */
 
 /* #region */
