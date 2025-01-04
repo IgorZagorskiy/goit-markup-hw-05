@@ -623,6 +623,10 @@ letter-spacing: 0.02em;
  width: 453px;
  height: 80px;
  margin-left: 80px;
+ display: flex;
+justify-content: center;
+  align-items: center;
+  gap: 24px;
 }
 
 .footer-form-text {
@@ -654,13 +658,6 @@ letter-spacing: 0.02em;
     line-height: 24px;
     letter-spacing: 0.04em;
     text-align: left;
-}
-
-.footer-wrapper {
-display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
 }
 
 /* #endregion */
@@ -714,7 +711,7 @@ transform: translateX(-50%) translateY(-50%);
   border-radius: 50%;
   box-sizing: border-box;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    background: rgb(231, 233, 252);
+    background-color: rgb(231, 233, 252);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -722,7 +719,7 @@ transform: translateX(-50%) translateY(-50%);
     width: 24px;
     height: 24px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: background-color, fill;
+    transition-property: background-color, border;
 }
 
 .modal-btn-icon {
